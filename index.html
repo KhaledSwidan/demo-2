@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar py-0 bg-primary">
+      <div class="container-fluid flex-row-reverse">
+        <a class="navbar-brand p-0 m-0" href="index.html">
+          <img src="img/logo.png" alt="" width="100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mb-2" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-start px-0 py-2">
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#firstOffcanvas"
+                aria-controls="firstOffcanvas">
+                الصفحة الرئييسية
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="firstOffcanvas"
+                aria-labelledby="firstOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="firstOffcanvasLabel">
+                    الصفحة الرئييسية
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#secondOffcanvas"
+                aria-controls="secondOffcanvas">
+                مركز نيوكامبريدج التعليمى
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="secondOffcanvas"
+                aria-labelledby="secondOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="secondOffcanvasLabel">
+                    مركز نيوكامبريدج التعليمى
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne">
+                          <h6>الطلبة</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="studentsData.html">بيانات الطلبة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">غياب الطلبة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">طرد الطلاب</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">حذف الطالب نهائيا</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">رسائل الدعاية والاعلان</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          <h6>المدفوعات</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">دفع كل طلاب المجموعة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">أرصدة الطالب</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">درجات الطالب</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">دفع الطالب لكل المجموعات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">ضبط الايصالات</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree">
+                          <h6>المدرسين</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">بيانات المدرسين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">المواد الدراسية للمدرسين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">حسابات المدرسين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">مذكرات المدرسين</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour">
+                          <h6>المجموعات</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">بيانات المجموعات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">مواعيد المجموعات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">توزيع الطلبة على المجموعات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">تسجيل الطالب بالمجموعة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">ارسال رسائل</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive">
+                          <h6>العمليات</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">حضور الطلبة</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">حضور الطلبة الضيوف</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">نقل الطلاب للعام الجديد</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">الحضور اليدوى</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">مديونات الطلبة</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix">
+                          <h6>الحسابات</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">دليل الحسابات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">القيود اليومية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">تقارير الحسابات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">متابعة الحصص اليومية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">نسخ المجموعات</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="collapseSeven">
+                          <h6>طباعة الكروت</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSeven"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">طباعة كل الكروت</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">طباعة الكروت للمدرسين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">حسابات المستخدمين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">طباعة الايصالات</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">استلام الكروت</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseEight"
+                          aria-expanded="false"
+                          aria-controls="collapseEight">
+                          <h6>التقارير</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseEight"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">غياب الطالب</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">اجندة تليفونات المدرسين</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">تقرير خصم الطلاب</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">حسابات العهدة الجديدة</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseNine"
+                          aria-expanded="false"
+                          aria-controls="collapseNine">
+                          <h6>التعريفات</h6>
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseNine"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                              <a href="#">المراكزالتعليمية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">اعدادات الرسائل</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">التعريفات الأساسية</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">رسائل المدرسين</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#thirdOffcanvas"
+                aria-controls="thirdOffcanvas">
+                المراكزالتعليمية
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="thirdOffcanvas"
+                aria-labelledby="thirdOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="thirdOffcanvasLabel">
+                    المراكزالتعليمية
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#forthOffcanvas"
+                aria-controls="forthOffcanvas">
+                اعدادات الرسائل
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="forthOffcanvas"
+                aria-labelledby="forthOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="forthOffcanvasLabel">
+                    اعدادات الرسائل
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#fifthOffcanvas"
+                aria-controls="fifthOffcanvas">
+                التعريفات الأساسية
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="fifthOffcanvas"
+                aria-labelledby="fifthOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="fifthOffcanvasLabel">
+                    التعريفات الأساسية
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn main-link"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sixthOffcanvas"
+                aria-controls="sixthOffcanvas">
+                رسائل المدرسين
+              </button>
+
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                tabindex="-1"
+                id="sixthOffcanvas"
+                aria-labelledby="sixthOffcanvasLabel">
+                <div class="offcanvas-header flex-row-reverse">
+                  <h5
+                    class="offcanvas-title w-100 text-center"
+                    id="sixthOffcanvasLabel">
+                    رسائل المدرسين
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
